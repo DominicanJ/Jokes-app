@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bilingual Programers CLUB</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #ccc;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .joke, .fact {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎭 Mire una Joke mano:</h1>
+        <div class="joke">
+            <p><strong>{{ joke.setup }}</strong></p>
+            <p>{{ joke.punchline }}</p>
+        </div>
+        <h2>📘 Mire pa que no se me vaya bruto, mire un FACTO pa:</h2>
+        <div class="fact">
+            <p>{{ fact.text }}</p>
+        </div>
+    </div>
+</body>
+</html>
